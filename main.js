@@ -17,7 +17,7 @@ d3.csv("../data/video_games.csv").then(function(data) {
         .call(d3.axisBottom(xScale).tickSize(0))
         .attr("transform", `translate(25, ${height / 2})`);
     let yScale = d3.scaleLinear()
-        .domain([0, 200])
+        .domain([0, 175])
         .range([height, 0]);
     svg.append("g")
         .call(d3.axisLeft(yScale))
